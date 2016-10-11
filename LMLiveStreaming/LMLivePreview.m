@@ -318,8 +318,13 @@
             if(_self.startLiveButton.selected){
                 [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
                 LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-                stream.url = @"rtmp://live.hkstv.hk.lxdns.com:1935/live/stream799";
+                stream.url = @"rtmp://liveshow.push.51vcloud.com/live/stream2399";//@"rtmp://push.yftest.yflive.net:1935/live/XXX";
+                //@"rtmp://video-center.alivecdn.com/live/stream2399?vhost=live.51vcloud.com"
+                //rtmp://liveshow.push.51vcloud.com/live/stream2399
                 //stream.url = @"rtmp://daniulive.com:1935/live/stream2399";
+                //pull
+                //rtmp://play.yftest.yflive.net/live/XXX
+                //rtmp://liveshow.pull.51vcloud.com/live/stream2399
                 [_self.session startLive:stream];
             }else{
                 [_self.startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
